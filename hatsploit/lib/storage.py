@@ -27,7 +27,7 @@ import json
 from typing import Union, Any
 
 
-class GlobalStorage(object):
+class GlobalStorage(object):        #外部储存
     """ Subclass of hatsploit.lib module.
 
     This subclass of hatsploit.lib module is intended for providing
@@ -116,7 +116,7 @@ class GlobalStorage(object):
             pass
 
 
-class LocalStorage(object):
+class LocalStorage(object):             #内部储存,退出清空
     """ Subclass of hatsploit.lib module.
 
     This subclass of hatsploit.lib module is intended for providing
