@@ -40,7 +40,7 @@ class Badges(object):
         self.io = IO()
 
     def print_empty(self, message: str = '', start: str = '%remove', end: str = '%newline') -> None:
-        """ Print string with empty start.
+        """ Print string with empty start.  
 
         :param str message: message to print
         :param str start: string to print before the message
