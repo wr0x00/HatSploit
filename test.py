@@ -43,5 +43,5 @@ print(cl.libreadline(input(':')))
         - isinstance() 会认为子类是一种父类类型，考虑继承关系。
 
 '''
-from hatsploit.core.base.io import IO
-IO.input
+import subprocess
+subprocess.call("ls")

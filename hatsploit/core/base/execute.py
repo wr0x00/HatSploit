@@ -76,6 +76,12 @@ class Execute(object):
 
         :param list command: command with arguments
         :return bool: status, True if success else False
+
+        ?用于显示所有加载的接口命令。
+
+        &用于在后台执行命令。
+
+        !用于执行系统命令。
         """
 
         if command[0][0] == '#':
@@ -116,7 +122,8 @@ class Execute(object):
         try:
             subprocess.call(command)
         except Exception:
-            self.badges.print_error(f"Unrecognized system command: {command[0]}!")
+            self.badges.print_error(
+                f"Unrecognized system command: {command[0]}!")
 
     def execute_custom_command(self, command: list, handler: dict) -> bool:
         """ Execute command via custom handler.
